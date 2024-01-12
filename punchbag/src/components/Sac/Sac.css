@@ -1,0 +1,9 @@
+.sac{
+    height: 60vh;
+    border-radius: 15px;
+    width: 10vw;
+    margin-top: 3%;
+    background-image: url(../../../public/img/sac.png);
+    background-position: center;
+    background-size: cover;
+}

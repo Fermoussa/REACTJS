@@ -1,0 +1,19 @@
+[
+    {
+        "nom" : "feraouni",
+        "prenom": "moussa",
+        "age": "21"
+    },
+
+    {
+        "nom" : "ferao",
+        "prenom": "yous",
+        "age": "25"
+    },
+
+    {
+        "nom" : "elmrabet",
+        "prenom" : "jaafar",
+        "age" : "23"
+    }
+]

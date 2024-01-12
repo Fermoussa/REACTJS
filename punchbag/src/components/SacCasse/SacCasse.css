@@ -1,0 +1,9 @@
+.casse{
+    height: 60vh;
+    border-radius: 15px;
+    width: 10vw;
+    margin-top: 3%;
+    background-image: url(../../../public/img/sac-casse.png);
+    background-position: center;
+    background-size: cover;
+}

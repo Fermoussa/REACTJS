@@ -1,0 +1,7 @@
+.carte{
+
+    margin-bottom: 3%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,85 @@
+.App {
+  width: 80vw;
+  display: flex;
+}
+
+.cardall {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: transparent;
+  gap: 5px;
+  width: 100%;
+  place-items: center;
+}
+
+@media screen and (max-width:375px) {
+  .App {
+    width: 90vw;
+    height: 88vh;
+    flex-direction: column;
+  }
+
+  .cardall {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: transparent;
+    gap: 5px;
+    width: 97%;
+    place-items: center;
+    padding-left: 8%;
+
+    .cartes{
+      width: 83vw;
+      margin-top: 4%;
+    }
+}
+
+}
+
+@media screen and (max-width:375px) {
+  .App {
+    width: 90vw;
+    height: 88vh;
+    flex-direction: column;
+  }
+
+  .cardall {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: transparent;
+    gap: 5px;
+    width: 97%;
+    place-items: center;
+    padding-left: 8%;
+
+    .cartes{
+      width: 83vw;
+      margin-top: 4%;
+    }
+}
+
+}
+
+@media screen and (min-width:425px) and (max-width:500px) {
+  .App {
+    width: 90vw;
+    height: 88vh;
+    flex-direction: column;
+  }
+
+  .cardall {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: transparent;
+    gap: 5px;
+    width: 97%;
+    place-items: center;
+    padding-left: 8%;
+
+    .cartes{
+      width: 83vw;
+      margin-top: 4%;
+    }
+}
+
+}

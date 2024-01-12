@@ -1,0 +1,84 @@
+.cartejeremy{
+    /* width: 20%; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px !important;
+    
+
+
+    .tete{
+        width: 30%;
+        height: 60%;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin-bottom: 15%;
+    }
+
+    .nom{
+        color: white;
+        font-size: 28px;
+    }
+
+    .hautjeremy{
+        display: flex;
+        background-color: rgb(77, 77, 181);
+        flex-direction: column;
+        padding-bottom: 25%;
+        padding-left: 8%;
+        padding-top: 8%;
+    }
+
+    .basjeremy{
+        display: flex;
+        flex-direction: column;
+        background-color: darkblue;
+        padding-left: 8%;
+        padding-top: 8%;
+        gap: 10px;
+        padding-bottom: 8%;
+        color: white;
+
+        span{
+           cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .hautjeremy{
+        span{
+            /* background-color: red; */
+            padding-left: 45%;
+        }
+
+        .report{
+            margin-top: -32%;
+        }
+    }
+
+    .cartejeremy{
+        .hautjeremy{
+            padding-bottom: 8%;
+            padding-right: 4%;
+        }
+
+        .famille {
+            padding-left: 72%;
+            margin-top: -10%;
+        }
+
+        .tete {
+            width: 28%;
+            height: 66%;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin-bottom: 15%;
+        }
+
+        .basjeremy{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.jauge{
+    width: 30vw;
+    height: 4vh;
+    display: flex;align-items: center;
+    font-size: 15px;
+    background-color: red;
+    margin-top: 3%;
+    border: 3px solid black;
+}

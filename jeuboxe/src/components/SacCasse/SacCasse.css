@@ -1,0 +1,8 @@
+.sacCasse{
+    height: 60vh;
+    width: 10vw;
+    /* background-color: gray; */
+    background-image: url(../../../public/img/saccasse.png);
+    background-size: cover;
+    background-position: center;
+}
