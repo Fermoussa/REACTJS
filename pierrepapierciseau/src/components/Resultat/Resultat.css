@@ -1,0 +1,45 @@
+.f{
+    background-image: url('../../assets/icon-paper.svg');
+    padding: 4%;
+    border-radius: 50%;
+    border: 10px solid rgb(72, 72, 227);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    background-color: white;
+}
+
+
+
+.c {
+    background-image: url('../../assets/icon-scissors.svg');
+    padding: 4%;
+    border-radius: 50%;
+    border: 10px solid orange;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    background-color: white;
+}
+
+.p {
+    background-image: url('../../assets/icon-rock.svg');
+    padding: 4%;
+    border-radius: 50%;
+    border: 10px solid red;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    background-color: white;
+}
+
+.ligneresultat{
+    width: 80vw;
+    height: 20vh;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+
+

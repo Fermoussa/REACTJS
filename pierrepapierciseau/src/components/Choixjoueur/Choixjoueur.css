@@ -1,0 +1,124 @@
+.contentChoix {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/bg-triangle.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 28vw;
+    height: 40vh;
+    margin-top: 8%;
+    /* background-color: red; */
+
+    .lignehaut {
+        display: flex;
+        /* background-color: blueviolet; */
+        margin-bottom: 4%;
+        justify-content: space-between;
+        margin-top: -8%;
+
+        .f {
+            background-image: url('../../assets/icon-paper.svg');
+            padding: 12%;
+            border-radius: 50%;
+            border: 10px solid rgb(72, 72, 227);
+            background-position: center;
+            background-repeat: no-repeat;
+            color: transparent;
+            background-color: white;
+        }
+
+        .c {
+            background-image: url('../../assets/icon-scissors.svg');
+            padding: 12%;
+            border-radius: 50%;
+            border: 10px solid orange;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: transparent;
+            background-color: white;
+        }
+    }
+
+    .lignebas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 17%;
+
+        .p {
+            background-image: url('../../assets/icon-rock.svg');
+            padding: 12%;
+            border-radius: 50%;
+            border: 10px solid red;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: transparent;
+            background-color: white;
+        }
+    }
+}
+
+
+.milieu {
+    display: flex;
+    justify-content: center;
+
+    span {
+        background-color: rgb(16, 16, 69);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        padding: 2%;
+    }
+}
+
+/* .bord {
+    --border-size: 3px;
+    --border-angle: 0turn;
+    width: 10vmin;
+    height: 3vmin;
+    background-image: conic-gradient(from var(--border-angle),
+            #213,
+            #112 50%,
+            #213),
+        conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+    background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)),
+        cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+&:hover {
+    animation-play-state: paused;
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+**/
+
+@media screen and (max-width:375px){
+    .contentChoix{
+        width: 80vw;
+        height: 44vh;
+        margin-top: 33%;
+    }
+
+    .bord{
+        width: 16vmin;
+        height: 5vmin;
+    }
+} 

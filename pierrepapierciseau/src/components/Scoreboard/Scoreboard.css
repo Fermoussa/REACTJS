@@ -1,0 +1,39 @@
+.tableauScore{
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    border: 3px solid white;
+    padding: 1.5%;
+    border-radius: 7px;
+    margin-top: 3%;
+    justify-content: space-between;
+
+    .titre{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: larger;
+        font-weight: 800;
+    }
+
+    .score{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        color: darkblue;
+        font-weight: 600;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    .tableauScore{
+        width: 62vw;
+    }
+
+}
