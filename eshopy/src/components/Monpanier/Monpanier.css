@@ -1,0 +1,21 @@
+.panier{
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    padding-left: 5%;
+    height: 15vh;
+    border-top: 3px solid white;
+    margin-top: 4%;
+    color: white;
+}
+
+.contentpanier{
+    display: flex;
+    flex-direction: column;
+}
+
+.lepanier{
+    display: flex;
+    flex-direction: column;
+}
+

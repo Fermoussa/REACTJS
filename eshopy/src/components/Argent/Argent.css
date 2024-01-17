@@ -1,0 +1,9 @@
+.argent{
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    padding-left: 5%;
+    height: 15vh;
+    border-bottom: 3px solid white;
+    color: white;
+}

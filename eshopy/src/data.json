@@ -1,0 +1,25 @@
+[
+    {
+        "nom": "Coca Cola",
+        "prix": 3,
+        "stock": 4,
+        "prit": 0,
+        "image": "https://i.pinimg.com/originals/21/1d/65/211d65e7d45b0b3484468091ad92d222.png"
+    },
+
+    {
+        "nom": "Fanta",
+        "prix": 2,
+        "stock": 7,
+        "prit": 0,
+        "image": "https://toppng.com//public/uploads/preview/mexican-fanta-png-vector-library-stock-fanta-in-a-glass-bottle-115629758636resd3f2em.png"
+    },
+
+    {
+        "nom": "Iced tea",
+        "prix": 5,
+        "stock": 6,
+        "prit": 0,
+        "image": "https://assets.unileversolutions.com/v1/90804290.png"
+    }
+]
