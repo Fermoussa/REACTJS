@@ -1,0 +1,21 @@
+.feuille{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    flex-direction: column;
+    /* background-color: green; */
+    border: 3px solid;
+    margin-top: 5%;
+}
+
+.tache{
+    background-color: darkcyan;
+    color: white;
+    border: 1px solid white;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 5%; */
+    margin-bottom: 2.5%;
+
+}

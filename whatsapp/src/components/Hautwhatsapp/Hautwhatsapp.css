@@ -1,0 +1,17 @@
+.Hautwhatsapp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3%;
+    width: 20vw;
+
+    .point{
+        margin-left: 2%;
+    }
+
+    .double{
+        gap: 10px;
+        display: flex;
+        margin-right: 2%;
+    }
+}
