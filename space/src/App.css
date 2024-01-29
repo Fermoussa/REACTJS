@@ -1,0 +1,70 @@
+.App {
+  width: 100vw !important;
+  height: 100vh !important;
+  display: flex;
+}
+
+header{
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  color: white;
+  position: absolute;
+  width: 98%;
+  padding-left: 2%;
+  height: 10vh;
+  align-items: center;
+  margin-top: 2%;
+
+  .etoile{
+    width: 3vw;
+    height: 5vh;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6%;
+
+    img{
+      width: 5vw;
+      height: 5vh;
+    }
+  }
+  .ligne{
+    width: 20vw;
+    height: 2px;
+    background-color: white;
+    margin-right: 3%;
+  }
+}
+
+.active{
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav{
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  width: 60%;
+  padding-left: 10%;
+  /* width: 80%; */
+  display: flex;
+  /* padding-right: 20%; */
+  align-items: center;
+  /* padding-left: 10%; */
+  gap: 5%;
+  a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+  }
+}

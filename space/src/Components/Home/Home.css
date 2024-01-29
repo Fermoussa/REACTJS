@@ -1,0 +1,55 @@
+.home {
+    background-image: url(../../assets/img/background-home-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    .txthome {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        /* background-color: green; */
+        padding-top: 15%;
+        width: 50vw;
+
+        .txt1 {
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        .txt2 {
+            font-size: 160px;
+            font-weight: 400;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        .txt3 {
+            /* background-color: red; */
+            width: 60%;
+        }
+    }
+
+    .explore {
+        /* background-color: red; */
+        padding-top: 15%;
+        span {
+            color: black;
+            background-color: white;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            font-size: 30px;
+            font-weight: 200;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+}

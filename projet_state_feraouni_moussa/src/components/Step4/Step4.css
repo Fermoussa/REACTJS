@@ -1,0 +1,111 @@
+.page4{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    /* background-color: cadetblue; */
+    padding-left: 7%;
+    width: 30vw;
+}
+
+.recap{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 246, 249);
+    padding: 4%;
+
+    .plan{
+        display: flex;
+        flex-direction: column;
+
+        .detailplan{
+            /* background-color: red; */
+            display: flex;
+            justify-content: space-between;
+
+            span{
+                color: darkblue;
+                font-weight: 600;
+            }
+        }
+
+        .retour{
+            color: red;
+            color: rgb(172, 171, 171);
+            font-size: 14px;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-bottom: 10%;
+            /* background-color: yellow; */
+            margin-top: 2%;
+            border-bottom: 1px solid lightgray;
+            height: 6vh;
+        }
+
+        .choixpub{
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+
+
+            .pub{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .add{
+                    color: rgb(121, 120, 120);
+                }
+
+                .prix{
+                    color: darkblue;
+                    font-weight: 600;
+                }
+            }
+
+        }
+    }
+}
+
+.total{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    margin-top: 3%;
+    color: rgb(131, 130, 130);
+}
+
+.prix{
+    color: rebeccapurple;
+    font-weight: 900;
+}
+
+
+.pass3{
+    width: 95%;
+    margin-top: 8%;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: red; */
+
+    .goback{
+        background: transparent;
+        color: darkblue;
+        border: 0;
+        font-weight: 900;
+    }
+
+    button{
+        background-color: darkblue;
+        color: white;
+        border: 0;
+        border-radius: 10px;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        padding-left: 4%;
+        padding-right: 4%;
+        font-weight: 800;
+    }
+}

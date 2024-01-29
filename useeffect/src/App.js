@@ -21,58 +21,58 @@
 // export default App;
 
 //! Exo2 ------------------------------------------------------------------------
-// import { useEffect, useState } from 'react';
-// import './App.css';
+import { useEffect, useState } from 'react';
+import './App.css';
 
-// function App() {
+function App() {
 
-//   const[chrono, setChrono] = useState(0);
-//   const[minutes, setMinutes] = useState(0);
-//   const[verif, setVerif] = useState(0);
+  const[chrono, setChrono] = useState(0);
+  const[minutes, setMinutes] = useState(0);
+  const[verif, setVerif] = useState(0);
 
-//   function lancer(){
-//     setInterval(() => {
-//       // setChrono(chrono+1);
-//       setChrono((prevchrono) => prevchrono+1);
-//       setVerif((prevverif) => prevverif+1);
-//       // setTemps((temps) => temps + 1);
-//       // if(chrono == 60){
-//       //   console.log("minute");
-//       // }
+  function lancer(){
+    setInterval(() => {
+      // setChrono(chrono+1);
+      setChrono((prevchrono) => prevchrono+1);
+      setVerif((prevverif) => prevverif+1);
+      // setTemps((temps) => temps + 1);
+      // if(chrono == 60){
+      //   console.log("minute");
+      // }
 
-//     }, 200);
+    }, 200);
 
-//   }
-
-
+  }
 
 
-//   useEffect(()=>{
-//     console.log(`le chrono ${chrono}`);
-//     console.log(`le test ${verif}`);
 
-//     if (chrono == 60) {
-//       setChrono(0)
-//     }
 
-//     if(verif == 60){
-//       console.log("minute");
-//       setMinutes((prevminutes)=> prevminutes+1);
-//       setVerif(0);
-//     }
+  useEffect(()=>{
+    console.log(`le chrono ${chrono}`);
+    console.log(`le test ${verif}`);
 
-//     return()=>{
+    if (chrono == 60) {
+      setChrono(0)
+    }
 
-//     }
-//   },[chrono])
+    if(verif == 60){
+      console.log("minute");
+      setMinutes((prevminutes)=> prevminutes+1);
+      setVerif(0);
+    }
 
-//   return (
-//     <div className="App">
-//       <h1> Chrono:  <span className='time'> {minutes}: {chrono <10 ? "0" : null}{chrono} </span> </h1>
-//       <button onClick={()=> lancer()}> lancer </button>
-//     </div>
-//   );
-// }
+    return()=>{
+
+    }
+  },[chrono])
+
+  return (
+    <div className="App">
+      <h1> Chrono:  <span className='time'> {minutes}: {chrono <10 ? "0" : null}{chrono} </span> </h1>
+      <button onClick={()=> lancer()}> lancer </button>
+    </div>
+  );
+}
 
 // export default App;
 

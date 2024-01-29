@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "nom": "ferrari",
+        "prix": "350K"
+    },
+    {
+        "id": 2,
+        "nom": "amg",
+        "prix": "250K"
+    },
+    {
+        "id": 3,
+        "nom": "porsche",
+        "prix": "315K"
+    }
+
+]

@@ -1,0 +1,40 @@
+.side{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../../public/img/sidebar.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20vw;
+    height: 60vh;
+    align-items: center;
+    row-gap: 6%;
+    padding-top: 6%;
+    border-radius: 10px;
+
+}
+
+.lien{
+    display: flex;
+    flex-direction: row;
+    /* background-color: beige; */
+    width: 70%;
+    gap: 20%;
+    align-items: center;
+    color: white;
+
+    button{
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        border: 1px solid white;
+        color: white;
+        background-color: transparent;
+        font-weight: bold;
+    }
+ 
+
+    .txtlien{
+        display: flex;
+        flex-direction: column;
+    }
+}
