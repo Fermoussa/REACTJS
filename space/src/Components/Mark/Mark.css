@@ -1,0 +1,68 @@
+.crew{
+    background-image: url(../../assets/img/background-crew-desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    color: white;
+
+    .pick {
+
+        padding-left: 10%;
+        margin-top: 12%;
+        font-weight: 200;
+    }
+
+    .detailcrew{
+        display: flex;
+        flex-direction: row;
+
+        .gauchecrew{
+            display: flex;
+            flex-direction: column;
+            /* background-color: darkcyan; */
+            padding-left: 10%;
+            width: 40%;
+
+            .post{
+                font-size: 25px;
+                margin-top: 18%;
+                color: rgb(198, 198, 244);
+            }
+
+            .crewname{
+                font-size: 45px;
+                font-weight: 200 !important;
+            }
+
+            .descriptioncrew{
+                /* background-color: blue; */
+                width: 65%;
+                line-height: 1.5rem;
+            }
+
+            .changecrew2{
+                display: flex;
+                flex-direction: row;
+                gap: 5%;
+                /* background-color: blue; */
+                margin-top: 5%;
+            }
+        }
+
+        .droitecrew{
+            /* background-color: green; */
+            padding-top: 3%;
+
+            .people{
+                height: 65vh;
+                /* background-color: red; */
+            }
+        }
+    }
+}
+

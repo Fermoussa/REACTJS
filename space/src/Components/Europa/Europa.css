@@ -1,5 +1,5 @@
-.destination {
-    background-image: url(../../assets/img/destination/destination.png);
+.europa{
+    background-image: url(../../assets/img/destination-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,7 +9,6 @@
     /* justify-content: center; */
     /* align-items: center; */
     color: white;
-
 
     .pick {
 
@@ -96,21 +95,12 @@
             }
         }
     }
+
 }
 
 
-/* a{
-    list-style: none;
-    text-decoration: none;
-    color: red;
-} */
 
 
-.test {
-    background: linear-gradient(rgba(209, 209, 209, 0.45),
-            rgba(227, 227, 227, 0.45)), url(../../assets/img/destination-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    z-index: 0;
-}
+    
+
+
