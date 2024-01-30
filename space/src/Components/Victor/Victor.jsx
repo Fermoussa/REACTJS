@@ -1,20 +1,24 @@
 import React from 'react';
-import './Crew.css';
-import douglas from '../../assets/img/image-douglas-hurley.webp'
+import './Victor.css';
+import victor from '../../assets/img/victor.png'
 import { NavLink } from 'react-router-dom';
 
-function Crew() {
+function Victor() {
     return (
         <div className='crew'>
             <h2 className='pick'> <span>02</span> MEET YOUR CREW </h2>
             <div className="detailcrew">
                 <div className="gauchecrew">
-                    <span className='post'> COMMANDER  </span>
-                    <span className='crewname'> DOUGLAS HURLEY </span>
+                    <span className='post'> PILOT  </span>
+                    <span className='crewname'> VICTOR GLOVER </span>
                     <p className='descriptioncrew'>
-                        Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+                    Pilot on the first operational flight of the SpaceX Crew
+                    Dragon to the International Space Station. Glover is a 
+                    commander in the U.S. Navy where he pilots an F/A-18.He 
+                    was a crew member of Expedition 64, and served as a 
+                    station systems flight engineer.
                     </p>
-                    <div className="changecrew1">
+                    <div className="changecrew3">
                         <NavLink to={"/crew"}> <div className="boule"></div> </NavLink>
                         <NavLink to={"/crew/mark"}> <div className="boule"></div> </NavLink>
                         <NavLink to={"/crew/victor"}> <div className="boule"></div>  </NavLink>
@@ -23,7 +27,7 @@ function Crew() {
                 </div>
 
                 <div className="droitecrew">
-                    <img src={douglas} className='people' alt="" srcset="" />
+                    <img src={victor} className='people' alt="" srcset="" />
                 </div>
 
 
@@ -32,4 +36,4 @@ function Crew() {
     )
 }
 
-export default Crew
+export default Victor

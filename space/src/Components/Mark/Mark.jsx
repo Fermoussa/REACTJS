@@ -18,10 +18,10 @@ function Mark() {
                     African to travel to space as a space tourist.
                     </p>
                     <div className="changecrew2">
-                        <NavLink to={"/crew"}> p </NavLink>
-                        <NavLink to={"/crew"}> p </NavLink>
-                        <NavLink to={"/crew"}> p </NavLink>
-                        <NavLink to={"/crew"}> p </NavLink>
+                        <NavLink to={"/crew"}> <div className="boule"></div> </NavLink>
+                        <NavLink to={"/crew/mark"}> <div className="boule"></div> </NavLink>
+                        <NavLink to={"/crew/victor"}> <div className="boule"></div>  </NavLink>
+                        <NavLink to={"/crew/ansar"}> <div className="boule"></div>  </NavLink>
                     </div>
                 </div>
 

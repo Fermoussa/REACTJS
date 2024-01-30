@@ -1,18 +1,21 @@
 import React from 'react';
-import './Crew.css';
-import douglas from '../../assets/img/image-douglas-hurley.webp'
+import './Ansar.css';
+import ansar from '../../assets/img/anousha.png'
 import { NavLink } from 'react-router-dom';
 
-function Crew() {
+function Ansar() {
     return (
-        <div className='crew'>
+        <div className='ansar'>
             <h2 className='pick'> <span>02</span> MEET YOUR CREW </h2>
             <div className="detailcrew">
                 <div className="gauchecrew">
-                    <span className='post'> COMMANDER  </span>
-                    <span className='crewname'> DOUGLAS HURLEY </span>
+                    <span className='post'> FLIGHT ENGINEER  </span>
+                    <span className='crewname'> ANOUSHEH ANSARI </span>
                     <p className='descriptioncrew'>
-                        Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+                        Anousheh Ansari is an Iranian American engineer and co-
+                        founder of Prodea Systems. Ansari was the fourth self-
+                        funded space tourist, the first self-funded woman to fly
+                        to the ISS, and the first Iranian in space.
                     </p>
                     <div className="changecrew1">
                         <NavLink to={"/crew"}> <div className="boule"></div> </NavLink>
@@ -23,7 +26,7 @@ function Crew() {
                 </div>
 
                 <div className="droitecrew">
-                    <img src={douglas} className='people' alt="" srcset="" />
+                    <img src={ansar} className='people' alt="" srcset="" />
                 </div>
 
 
@@ -32,4 +35,4 @@ function Crew() {
     )
 }
 
-export default Crew
+export default Ansar

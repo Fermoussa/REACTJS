@@ -17,6 +17,21 @@
         font-weight: 200;
     }
 
+
+    /* .boule{
+        height: 15px;
+        width: 15px;
+        background-color: gray;
+        border-radius: 50%;
+    }
+
+    .active{
+        .boule{
+            color: white;
+            background-color: white;
+        }
+    } */
+
     .detailcrew{
         display: flex;
         flex-direction: row;

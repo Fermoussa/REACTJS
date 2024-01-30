@@ -8,6 +8,8 @@ import Europa from './Components/Europa/Europa';
 import Titan from './Components/Titan/Titan';
 import Crew from './Components/Crew/Crew';
 import Mark from './Components/Mark/Mark';
+import Victor from './Components/Victor/Victor';
+import Ansar from './Components/Ansar/Ansar';
 
 function App() {
 
@@ -49,6 +51,14 @@ function App() {
         {
           path: "crew/mark",
           element: <Mark />
+        },
+        {
+          path: "crew/victor",
+          element: <Victor />
+        },
+        {
+          path: "crew/ansar",
+          element: <Ansar />
         },
 
       ]

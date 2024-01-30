@@ -1,4 +1,4 @@
-.crew{
+.ansar{
     background-image: url(../../assets/img/background-crew-desktop.png);
     background-position: center;
     background-size: cover;
@@ -25,6 +25,22 @@
             border-bottom: 0;
         }
     }
+
+
+    /* .boule{
+        height: 15px;
+        width: 15px;
+        background-color: gray;
+        border-radius: 50%;
+    } */
+
+    /* .active{
+        background-color: white;
+        .boule{
+            color: blue;
+            background-color: blue;
+        }
+    } */
 
     .pick {
 
