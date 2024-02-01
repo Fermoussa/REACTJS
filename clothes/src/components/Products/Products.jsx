@@ -1,8 +1,7 @@
-//
-
 import React, { useState } from "react";
 import "./Products.css";
 import { Link } from "react-router-dom";
+import { Star } from 'lucide-react';
 
 function Products(props) {
 
@@ -31,24 +30,27 @@ function Products(props) {
         }
     }
 
-
+    let a = <Star />
 
     return (
         <div className="produits">
 
             <div className="entete">
-                <span> Nos Produts </span>
+                <span> Nos Produits </span>
             </div>
 
             <div className="contentProduits">
                 {produits.map((item, index) => (
-                    <Link to={"/test"} key={index}>
+                    <Link to={`/${item.id}`} key={index}>
                         <div className="carte" key={index}>
                             <span className="titre"> {item.title} </span>
-                            <Link to={"/test"}>
+                            <Link to={`/${item.id}`}>
                                 <img src={`${item.image}`} alt="" />
                             </Link>
-                            <span> {item.price} </span>
+                            <div className="prixrate">
+                                <span> €{item.price} </span>
+                                <span> {item.rating.rate}<Star className="etoile"/><span className="nbravis">({item.rating.count})</span>/5 </span>
+                            </div>
                         </div>
                     </Link>
                 ))}

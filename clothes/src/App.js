@@ -3,11 +3,13 @@ import './App.css';
 import Products from './components/Products/Products';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Productsdetails from './components/Productsdetails/Productsdetails';
 
 
 function App() {
 
-  const[data,setData] = useState([]);
+  const[data, setData] = useState([]);
+  const[favoris, setFavoris] = useState([]);
 
   useEffect(()=>{
     axios.get("https://fakestoreapi.com/products/")
@@ -21,8 +23,8 @@ function App() {
       element: <Products data={data} />
     },
     {
-      path: "/test",
-      element: <div> test </div>
+      path: "/:id",
+      element: <Productsdetails data={data} favoris={favoris} setFavoris={setFavoris} />
     }
   ])
   
