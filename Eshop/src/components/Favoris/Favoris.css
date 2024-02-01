@@ -1,0 +1,23 @@
+.favoris{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.titrefavoris{
+    color: white;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.lefavori{
+    img{
+        width: 5rem;
+        height: 5rem;
+    }
+}

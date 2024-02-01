@@ -37,6 +37,7 @@ function Products(props) {
 
             <div className="entete">
                 <span> Nos Produits </span>
+                <span> <Link to={"/favoris"}> Favoris </Link> </span>
             </div>
 
             <div className="contentProduits">

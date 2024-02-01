@@ -4,6 +4,7 @@ import Products from './components/Products/Products';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Productsdetails from './components/Productsdetails/Productsdetails';
+import Favoris from './components/Favoris/Favoris';
 
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
     {
       path: "/:id",
       element: <Productsdetails data={data} favoris={favoris} setFavoris={setFavoris} />
+    },
+    {
+      path: "/favoris",
+      element: <Favoris favoris={favoris} setFavoris={setFavoris} />
     }
   ])
   
