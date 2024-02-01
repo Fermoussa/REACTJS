@@ -1,0 +1,96 @@
+.carte{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    align-items: center;
+    border-radius: 10px;
+    height: 30vh;
+    padding-top: 4%;
+    text-align: center;
+  
+
+    img{
+        height: 8rem;
+        width: 8rem;
+        margin-top: 2rem;
+    }
+
+    .titre{
+        font-weight: bolder;
+        
+    }
+}
+
+.contentProduits {
+    gap: 1em;
+    /* background-color: red; */
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Assurez-vous que la hauteur du conteneur est à 100% */
+}
+
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.produits{
+    display: flex;
+    flex-direction: column;
+}
+
+.entete{
+    /* background-color: green; */
+    /* height: 5vh; */
+    /* padding-left: 5%; */
+    font-size: 30px;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: 700;
+}
+
+.choixpages{
+    font-size: 30px;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: 700;
+    justify-content: center;
+
+    ul{
+        /* background-color: green; */
+        display: flex;
+        justify-content:center;
+        /* width: 100%; */
+        gap: 4%;
+
+        li{
+            /* background-color: red; */
+            list-style: none;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 3%;
+
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+.active{
+    background-color: green;
+}

@@ -11,6 +11,7 @@ import Mark from './Components/Mark/Mark';
 import Victor from './Components/Victor/Victor';
 import Ansar from './Components/Ansar/Ansar';
 
+
 function App() {
 
   const monrouteur = createBrowserRouter([
@@ -75,6 +76,7 @@ function App() {
             <NavLink to={"/"}> 00 HOME </NavLink>
             <NavLink to={"/destination"}> 01 DESTINATION </NavLink>
             <NavLink to={"/crew"}> 02 CREW </NavLink>
+            <NavLink to={"/tech"}> 03 TECHNOLOGY </NavLink>
             {/* <NavLink to={"/destination"}> 01 DESTINATION </NavLink> */}
           </nav>
         </header>

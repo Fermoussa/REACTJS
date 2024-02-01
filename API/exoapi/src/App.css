@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  background: wheat;
+  width: 100vw;
+}
+
+.carte{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  margin-bottom: 3%;
+}
+
