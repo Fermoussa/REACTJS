@@ -11,7 +11,7 @@ function Productsdetails(props) {
     function ajoutfavoris(){
         // props.setFavoris([...props.favoris, article ])
         if (props.favoris.includes(article)) {
-            // props.setFavoris([...props.favoris, article ])
+            alert("deja dans la favoris")
         }
         else{
             props.setFavoris([...props.favoris, article ])
