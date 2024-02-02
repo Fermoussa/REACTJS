@@ -1,0 +1,20 @@
+header{
+  /* background-color: green; */
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  justify-content: center;
+  /* padding: 1%; */
+
+  nav{
+    /* background-color: red; */
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    button{
+      background-color: transparent;
+      border: 0;
+    }
+  }
+}
+

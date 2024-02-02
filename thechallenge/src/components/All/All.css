@@ -1,0 +1,75 @@
+.all{
+    /* background-color: green; */
+    background-color: rgb(237, 237, 237);
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentsearch{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input{
+        width: 25vw;
+        height: 6vh;
+        padding-left: 4%;
+    }
+}
+
+.contentpays{
+    gap: 5em;
+    /* background-color: red; */
+    /* padding: 2%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 3%;
+
+    .carte{
+
+        display: flex;
+        /* height: 40vh; */
+        flex-direction: column;
+        /* border: 1px solid black; */
+        background-color: white;
+        border-radius: 10px;
+
+        .gras{
+            font-weight: bold;
+        }
+
+        img{
+            width: 100%;
+            height: 20vh;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            /* height: 100%; */
+        }
+
+        .textpays{
+            display: flex;
+            flex-direction: column;
+            /* background-color: goldenrod; */
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+            padding-top: 1.5rem;
+            padding-bottom: 3rem;
+
+            .details{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nompays{
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .pop1{
+                margin-top: 4%;
+            }
+        }
+    }
+}
