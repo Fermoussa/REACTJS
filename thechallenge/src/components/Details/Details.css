@@ -42,6 +42,8 @@
     /* background-color: green; */
     margin-left: 5%;
     padding-top: 2%;
+    width: 80%;
+    gap: 10px;
 }
 
 
@@ -55,6 +57,15 @@
     .gauche{
         display: flex;
         flex-direction: column;
-        /* background-color: rebeccapurple; */
+        line-height: 32px;
+        /* background-color: red; */
     }
+}
+.droite{
+    /* background-color: gray; */
+    margin-left: 10%;
+    display: flex;
+    line-height: 32px;
+    flex-direction: column;
+    padding-top: 2%;
 }

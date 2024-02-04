@@ -10,6 +10,9 @@ function Details(props) {
   const firstNativeName = Object.values(pays.name.nativeName)[0];
   const nativename = firstNativeName ? firstNativeName.common : null;
 
+  const firstCurrencie = Object.values(pays.currencies)[0];
+  const curencie = firstCurrencie ? firstCurrencie.name : null;
+
   return (
     <div className='contentDetail'>
 
@@ -25,20 +28,28 @@ function Details(props) {
           <div className="alldetails">
             <div className='gauche'>
               <span>
-                <span className='gras'>Native name: {nativename} </span>
+                <span className='gras'>Native name: </span>{nativename}
               </span>
               <span>
-                <span className='gras'>Population: {pays.population}</span>
+                <span className='gras'>Population: </span>{pays.population}
               </span>
               <span>
-                <span className='gras'>Région: {pays.region}</span>
+                <span className='gras'>Région: </span>{pays.region}
               </span>
               <span>
-                <span className='gras'>Sub Région: {pays.subregion}</span>
+                <span className='gras'>Sub Région: </span>{pays.subregion}
+              </span>
+              <span>
+                <span className='gras'>Capital: </span>{pays.capital}
               </span>
             </div>
-            <div className="gauche">
-              gauche
+            <div className="droite">
+              <span>
+                <span className='gras'>Top level domain: </span>{pays.tld}
+              </span>
+              <span>
+                <span className='gras'>Currencies: </span>{curencie}
+              </span>
             </div>
           </div>
         </div>
