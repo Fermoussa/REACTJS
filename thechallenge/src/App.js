@@ -1,6 +1,7 @@
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css';
 import All from './components/All/All';
+import Details from './components/Details/Details';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -26,7 +27,7 @@ function App() {
         },
         {
           path: "/:id",
-          element: <div> single </div>
+          element: <Details data={data}/>
         }
       ]
     }
