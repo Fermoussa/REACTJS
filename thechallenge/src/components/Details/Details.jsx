@@ -58,6 +58,15 @@ function Details(props) {
               <span>
                 <span className='gras'>Languages: </span>{alllangue}
               </span>
+
+              <span> Borders:
+                {
+                  pays.borders?.map((item, index) => (
+                    <div key={index}> {item} </div>
+                  ))
+                }
+              </span>
+
             </div>
           </div>
         </div>
