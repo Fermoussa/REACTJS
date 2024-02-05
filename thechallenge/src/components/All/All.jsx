@@ -4,24 +4,30 @@ import { Link } from 'react-router-dom'
 
 function All(props) {
 
-    const[test, setTest] = useState(props.data);
+    const [test, setTest] = useState(props.data);
 
-    function ressearch(e){
-        if(e.key === 'Enter'){
-            console.log(e.target.value);
-            setTest(props.data.filter(element => element.name.common.toLowerCase() === e.target.value.toLowerCase()))
-            console.log(`test ${test}`);
+    function ressearch(e) {
+        // if(e.key === 'Enter'){
+        //     console.log(e.target.value);
+        //     setTest(props.data.filter(element => element.name.common.toLowerCase() === e.target.value.toLowerCase()))
+        //     console.log(`test ${test}`);
+        // }
 
-            
+        const searchTerm = e.target.value.toLowerCase();
 
-        }
+        setTest(
+            props.data.filter(element =>
+                element.name.common.toLowerCase().startsWith(searchTerm)
+            )
+        );
+
 
     }
 
     return (
         <div className='all'>
             <div className="contentsearch">
-                <input type="search" placeholder='Search for a country...' onKeyDown={ressearch} />
+                <input type="search" placeholder='Search for a country...' onChange={ressearch} />
                 <span> filter by region </span>
             </div>
 
