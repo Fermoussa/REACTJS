@@ -13,6 +13,11 @@ function Details(props) {
   const firstCurrencie = Object.values(pays.currencies)[0];
   const curencie = firstCurrencie ? firstCurrencie.name : null;
 
+
+  const langues = Object.values(pays.languages);
+  console.log(langues);
+  const alllangue = langues.join(', ');
+
   return (
     <div className='contentDetail'>
 
@@ -49,6 +54,9 @@ function Details(props) {
               </span>
               <span>
                 <span className='gras'>Currencies: </span>{curencie}
+              </span>
+              <span>
+                <span className='gras'>Languages: </span>{alllangue}
               </span>
             </div>
           </div>
