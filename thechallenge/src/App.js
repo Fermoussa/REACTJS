@@ -42,7 +42,7 @@ function App() {
       <header>
         <nav>
           <h3>  Where in the world </h3>
-          <button className='dark' onClick={() => setVerif(!verif)}> Dark Mode </button>
+          <button className='dark button-51' onClick={() => setVerif(!verif)}> Dark Mode </button>
         </nav>
       </header>
 
