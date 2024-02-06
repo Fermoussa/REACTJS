@@ -50,7 +50,8 @@ function All(props) {
             <div className="contentpays">
                 {
                     test.map((item, index) => (
-                        <div className="carte" key={index}>
+                        <Link to={`/${item.cca3}`}>
+                            <div className="carte" key={index}>
                             <Link to={`/${item.cca3}`}>
                                 <img src={`${item.flags.png}`} alt="" />
                             </Link>
@@ -62,7 +63,8 @@ function All(props) {
                                     <span> <span className="gras">Capital:</span> {item.capital} </span>
                                 </div>
                             </div>
-                        </div>
+                            </div>
+                        </Link>
                     ))
                 }
             </div>
