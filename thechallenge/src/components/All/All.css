@@ -41,7 +41,7 @@ a{
         /* border: 1px solid black; */
         background-color: white;
         border-radius: 10px;
-        box-shadow: 6px 6px 6px gray;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 
         .gras {
             font-weight: bold;
