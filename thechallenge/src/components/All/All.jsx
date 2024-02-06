@@ -44,7 +44,6 @@ function All(props) {
                     <option value="Europe">Europe</option>
                     <option value="Oceania">Oceania</option>
                     <option value="Antarctic">Antartic</option>
-
                 </select>
             </div>
 
@@ -52,7 +51,7 @@ function All(props) {
                 {
                     test.map((item, index) => (
                         <div className="carte" key={index}>
-                            <Link to={`/${item.name.common}`}>
+                            <Link to={`/${item.cca3}`}>
                                 <img src={`${item.flags.png}`} alt="" />
                             </Link>
                             <div className="textpays">

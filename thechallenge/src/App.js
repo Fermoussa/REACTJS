@@ -7,51 +7,55 @@ import axios from 'axios';
 
 function App() {
 
-  const[data,setData] = useState([]);
+  const [data, setData] = useState([]);
+  const [verif, setVerif] = useState(false);
 
-  useEffect(()=>{
+
+  useEffect(() => {
     axios.get("https://restcountries.com/v3.1/all")
-    .then((reponse)=> setData(reponse.data))
-    .catch((error)=> console.log(error))
-  },[])
+      .then((reponse) => setData(reponse.data))
+      .catch((error) => console.log(error))
+  }, [])
 
-  const monrouteur= createBrowserRouter([
+  const monrouteur = createBrowserRouter([
     {
       path: "/",
-      element: <Root/>,
+      element: <Root />,
 
       children: [
         {
           path: "",
-          element: <All data={data}/>
+          element: <All data={data} />
         },
         {
           path: "/:id",
-          element: <Details data={data}/>
+          element: <Details data={data} />
         }
       ]
     }
   ])
 
-  function Root(){
+  
+
+  function Root() {
     return <>
       <header>
         <nav>
           <h3>  Where in the world </h3>
-          <button> Dark Mode </button>
+          <button className='dark' onClick={() => setVerif(!verif)}> Dark Mode </button>
         </nav>
       </header>
 
       <main className="main">
-        <Outlet/>
+        <Outlet />
       </main>
 
-    
+
     </>
   }
 
   return (
-    <div className="App">
+    <div className={`App ${verif ? null : "darkMode"}`}>
       <RouterProvider router={monrouteur} />
     </div>
   );

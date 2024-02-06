@@ -5,12 +5,12 @@ import { Link, useParams } from 'react-router-dom';
 function Details(props) {
 
   const params = useParams();
-  const pays = props.data.find(item => item.name.common == params.id)
+  const pays = props.data.find(item => item.cca3 == params.id)
 
   const firstNativeName = Object.values(pays.name.nativeName)[0];
   const nativename = firstNativeName ? firstNativeName.common : null;
 
-  const firstCurrencie = Object.values(pays.currencies)[0];
+  const firstCurrencie = Object.values(pays.currencies)[0].name;
   const curencie = firstCurrencie ? firstCurrencie.name : null;
 
 
@@ -22,7 +22,7 @@ function Details(props) {
     <div className='contentDetail'>
 
       <div className="contentback">
-        <Link to={"/"}> <button>Back</button> </Link>
+        <Link to={"/"}> <button className='button-50'>Back</button> </Link>
       </div>
 
       <div className="detailpays">
@@ -59,11 +59,20 @@ function Details(props) {
                 <span className='gras'>Languages: </span>{alllangue}
               </span>
 
-              <span> Borders:
+              <span className='border'>
+                <span className='gras2'> Borders: </span>
                 {
-                  pays.borders?.map((item, index) => (
-                    <div key={index}> {item} </div>
-                  ))
+                  <div className="l">
+                    {
+                      pays.borders?.map((item, index) => (
+                        <div key={index} className='limitrof' > 
+                        <Link to={`/${item}`}> <button> {props.data.find(elem => elem.cca3 === item).name.common} </button> </Link>
+                        </div>
+                      ))
+                    }
+
+                  </div>
+
                 }
               </span>
 
