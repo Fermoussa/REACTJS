@@ -24,11 +24,32 @@ function All(props) {
 
     }
 
+    function continent(e){
+        console.log(e.target.value);
+        setTest(props.data.filter(element => element.region === e.target.value));
+
+        if(e.target.value == "all"){
+            setTest(props.data)
+        }
+    }
+
+
+
     return (
         <div className='all'>
             <div className="contentsearch">
                 <input type="search" placeholder='Search for a country...' onChange={ressearch} />
-                <span> filter by region </span>
+                <select name="pets" id="continent-select" onChange={continent}>
+                    <option value="">Filter by region</option>
+                    <option value="all">All</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">America</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                    <option value="Antarctic">Antartic</option>
+
+                </select>
             </div>
 
             <div className="contentpays">
