@@ -15,11 +15,7 @@ function All(props) {
 
         const searchTerm = e.target.value.toLowerCase();
 
-        setTest(
-            props.data.filter(element =>
-                element.name.common.toLowerCase().startsWith(searchTerm)
-            )
-        );
+        setTest(props.data.filter(element => element.name.common.toLowerCase().startsWith(searchTerm)));
 
 
     }
