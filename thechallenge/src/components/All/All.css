@@ -36,7 +36,7 @@ a{
 
     .carte {
         display: flex;
-        /* height: 40vh; */
+        height: 40vh;
         flex-direction: column;
         /* border: 1px solid black; */
         background-color: white;
@@ -104,3 +104,79 @@ a{
 
 
 /* CSS */
+
+
+@media screen and (max-width:375px) {
+    .carte {
+        width: 55vw;
+        height: 44vh !important;
+    }
+
+    .contentpays {
+        margin-top: 3%;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        margin-top: 11% !important;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:425px) {
+    .carte {
+        width: 55vw;
+        height: 44vh !important;
+    }
+
+    .contentpays {
+        margin-top: 3%;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        margin-top: 11% !important;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
+
+@media screen and (min-width:426px) and (max-width:768px) {
+
+    .contentpays {
+        margin-top: 3%;
+        margin-top: 11% !important;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    .carte{
+        height: 43vh !important;
+        width: 28vw !important;
+    }
+}
+
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    .contentpays {
+        margin-top: 3%;
+        margin-top: 11% !important;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+
+    .carte{
+        height: 43vh !important;
+        width: 25vw !important;
+    }
+}
+
+
+
+
+
+
+
+
