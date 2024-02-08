@@ -1,0 +1,10 @@
+.tache{
+    /* background-color: lightseagreen; */
+    margin-top: 3%;
+
+    .statut{
+        border: 1px solid gray;
+        padding: 1%;
+    }
+}
+
