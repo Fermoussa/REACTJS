@@ -19,9 +19,13 @@ function App() {
     }
   ])
 
+  function click(item){
+    setTache([...tache], item.etat = !item.etat);
+}
+
   return (
     <div className="App">
-    <Moncontext.Provider value={[tache, setTache]}>
+    <Moncontext.Provider value={[tache, setTache, click]}>
       <Taches/>
     </Moncontext.Provider>
     </div>

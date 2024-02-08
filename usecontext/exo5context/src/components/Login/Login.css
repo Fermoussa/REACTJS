@@ -1,0 +1,12 @@
+.log{
+    display: flex;
+    flex-direction: column !important;
+    width: 30vw;
+    padding: 3%;
+    row-gap: 2%;
+
+    .resume{
+        display: flex;
+        flex-direction: row;
+    }
+}
